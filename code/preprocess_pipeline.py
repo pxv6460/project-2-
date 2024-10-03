@@ -6,11 +6,14 @@ import warnings
 warnings.simplefilter(action="ignore")
 
 class Preprocess:
-    def __init__(self, raw_data_path):
+    def __init__(self, raw_data_path, verbose=False):
         self.df = pd.read_csv(raw_data_path, index_col=0)
-        self.df[["Vmag", "Plx", "e_Plx", "B-V"]] = self.df[["Vmag", "Plx", "e_Plx", "B-V"]].apply(pd.to_numeric, errors="coerce")
-        self.df = self.df.dropna()
 
+        if verbose: print(f"Converting numerical features to floats.")
+        self.df[["Vmag", "Plx", "e_Plx", "B-V"]] = self.df[["Vmag", "Plx", "e_Plx", "B-V"]].apply(pd.to_numeric, errors="coerce")
+        self._dropna(verbose)
+
+        if verbose: print(f"Calculating new features.")
         self.df["Plx"] = self.df["Plx"] / 1000
         self.df["Distance (parsecs)"] = 1/self.df["Plx"]
         self.df["Distance (light years)"] = abs(self.df["Distance (parsecs)"]) * 3.26156
@@ -19,11 +22,19 @@ class Preprocess:
         self.df["Luminosity (Sun=1)"] = 10**(0.4 * (4.85-self.df["Amag"]))
         self.df["Radius (Sun=1)"] = np.sqrt(self.df["Luminosity (Sun=1)"]) * (5778 / self.df["Temperature (K)"])**2
 
+        if verbose: print(f"Replacing infinity values with NaN.")
         self.df.replace([np.inf, -np.inf], np.nan, inplace=True)
-        self.df = self.df.dropna()
+        self._dropna(verbose)
 
+        if verbose: print(f"Classifying star type.")
         self.df["target"] = self.df["SpType"].apply(self.star_type)
+        self._dropna(verbose)
+
+    def _dropna(self, verbose):
+        count_before = self.df.shape[0]
         self.df = self.df.dropna()
+        count_after = self.df.shape[0]
+        if verbose: print(f"{count_before-count_after} rows dropped.")
 
     @staticmethod
     def star_type(spectral_type):
