@@ -25,7 +25,8 @@ class Preprocess:
         self.df["target"] = self.df["SpType"].apply(self.star_type)
         self.df = self.df.dropna()
 
-    def star_type(self, spectral_type):
+    @staticmethod
+    def star_type(spectral_type):
         if "VI" in spectral_type:
             return 0
         elif "IV" in spectral_type:
