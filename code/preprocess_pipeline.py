@@ -16,7 +16,7 @@ class Preprocess:
         if verbose: print(f"Calculating new features.")
         self.df["Plx"] = self.df["Plx"] / 1000
         self.df["Distance (parsecs)"] = 1/self.df["Plx"]
-        self.df["Distance (light years)"] = abs(self.df["Distance (parsecs)"]) * 3.26156
+        self.df["Distance (light years)"] = self.df["Distance (parsecs)"] * 3.26156
         self.df["Amag"] = self.df["Vmag"] + 5 * (np.log10(self.df["Plx"]) + 1)
         self.df["Temperature (K)"] = 4600 * (1/(0.92*self.df["B-V"] + 1.7) + 1/(0.92*self.df["B-V"] + 0.62))
         self.df["Luminosity (Sun=1)"] = 10**(0.4 * (4.85-self.df["Amag"]))
@@ -44,7 +44,11 @@ class Preprocess:
             return 1 # Subgiant
         elif "V" in spectral_type:
             return 0 # Main sequence
-        elif "III" in spectral_type or "II" in spectral_type or "Ib" in spectral_type or "Ia" in spectral_type or spectral_type[-1] == 0:
+        elif ("III" in spectral_type 
+              or "II" in spectral_type 
+              or "Ib" in spectral_type 
+              or "Ia" in spectral_type 
+              or spectral_type[-1] == 0):
             return 1 # Giant
         elif "M" in spectral_type:
             return 0 # Brown dwarf
