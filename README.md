@@ -60,10 +60,19 @@ self.df["Plx"] = self.df["Plx"] / 1000
 
 
 ### New Dataset!
-<img>
+insert image
 
 ### Coorelations
-<img>
+insert image
+
+### Data Decisions
+1. **BV and Temperature are highly negatively correlated at -0.93, we dropped BV**
+   - we experimented with dropping either/both, but dropping BV gives the best results
+
+2. **distance (parsecs) and distance(light years) are repetitive**
+   - we chose distance (light years) because it is more commonly used
+
+
 
  
 
