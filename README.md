@@ -60,10 +60,12 @@ self.df["Plx"] = self.df["Plx"] / 1000
 
 
 ### New Dataset!
-insert image
+<img width="742" alt="Screenshot 2024-10-07 at 7 13 28 PM" src="https://github.com/user-attachments/assets/06f65809-e7ec-4d4e-a6ec-e6e4f9f3ee94">
+
 
 ### Coorelations
-insert image
+<img width="743" alt="Screenshot 2024-10-07 at 7 14 11 PM" src="https://github.com/user-attachments/assets/0bed4562-36d2-4c4f-9554-980be5c37e23">
+
 
 ### Data Decisions
 1. **BV and Temperature are highly negatively correlated at -0.93, we dropped BV**
