@@ -36,6 +36,9 @@ Vmag – Visual Apparent Magnitude of the Star
    
 3. **Adding New Values**
    - Integrated newly calculated features into the dataset.
+  
+4. **Building Preprocessing Pipeline**
+    - code/preprocess_pipeline.py and code/preprocessing.ipynb
 
 ### New features added by the team:
 Temperature
