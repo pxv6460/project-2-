@@ -20,19 +20,22 @@ Vmag – Visual Apparent Magnitude of the Star
 ### Data Pre-processing 
 
 ### Data Decisions
-- We went back to the raw dataset and did our own data pre-processing. 
-- We saw the “balanced” dataset, and didn’t like it. We felt like the variables are limited, there are variables to be added,, and there is more cleaning to be done. 
-- After researching, we used a few formulas to calculate a few “extra” variables, using existing variables. 
-- We defined our own classification method based on astrophysics research, and defined our own Target variable
+- We revisited the raw dataset and conducted our own data pre-processing.
+- We found the "balanced" dataset unsatisfactory due to limited variables, missing potential variables, and the need for further cleaning.
+- After additional research, we derived a few extra variables using existing data through calculated formulas.
+- We defined our own classification method based on astrophysics research, establishing a custom target variable.
 
-### Pre-processing pipeline 
-1. Dropna
-   a. parsing features for numerical values
-   b. add new features \ remove infinite values
-   c. remove nulls after star classification 
-2. Defining target class \n
-   a. Based on the Hertzprung-Russell diagram, we defined our own target class based on spectral_types
-3. Adding new values 
+### Pre-processing Pipeline
+1. **Dropna**
+   - Parsing features for numerical values.
+   - Adding new features and removing infinite values.
+   - Removing nulls post star classification.
+   
+2. **Defining Target Class**
+   - Using the Hertzsprung-Russell diagram, we established a custom target class based on spectral types.
+   
+3. **Adding New Values**
+   - Integrated newly calculated features into the dataset.
 
 ### New features added by the team:
 Temperature
