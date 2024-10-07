@@ -63,7 +63,7 @@ self.df["Plx"] = self.df["Plx"] / 1000
 <img width="742" alt="Screenshot 2024-10-07 at 7 13 28 PM" src="https://github.com/user-attachments/assets/06f65809-e7ec-4d4e-a6ec-e6e4f9f3ee94">
 
 
-### Coorelations
+### Correlations
 <img width="743" alt="Screenshot 2024-10-07 at 7 14 11 PM" src="https://github.com/user-attachments/assets/0bed4562-36d2-4c4f-9554-980be5c37e23">
 
 
@@ -141,8 +141,8 @@ These features contributed the most to the model's predictive performance.
 
 ## Important Links
 
-- [Presentation](https://docs.google.com/presentation/d/1wgXX1xskPhSk_I_Lj6hHCDrwOBuM2jeK_WAaUD8KIoQ/edit#slide=id.p10)
+- [Presentation](https://docs.google.com/presentation/d/1wgXX1xskPhSk_I_Lj6hHCDrwOBuM2jeK_WAaUD8KIoQ/edit#slide=id.p1)
 - [Pre-processing Code](https://github.com/pxv6460/project-2-/blob/main/code/preprocessing.ipynb)
 - [Pre-processing Pipeline](https://github.com/pxv6460/project-2-/blob/main/code/preprocess_pipeline.py)
-- [ML Model Code](https://github.com/pxv6460/project-2-/blob/main/code/PeterProject2.ipynb)
+- [ML Model Code](https://github.com/pxv6460/project-2-/blob/main/code/main.ipynb)
 - [ML Model Pipeline](https://github.com/pxv6460/project-2-/blob/main/code/pipeline.py)
