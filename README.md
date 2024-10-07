@@ -119,6 +119,8 @@ The most important features for stellar classification are **Radius** and **Temp
 
 ## Comparisons 
 
+<img width="830" alt="Screenshot 2024-10-07 at 7 43 18 PM" src="https://github.com/user-attachments/assets/b26cf2af-4a4a-46f4-bcf0-2fd069e0ea20">
+
 - **Random Forest (Undersampled)**: Our version improved **accuracy** (0.8895 vs. 0.8784) and **F1-score** (0.8779 vs. 0.8813), highlighting better performance with undersampled data.
 - **KNN**: Slight improvements in **accuracy** (0.8763 vs. 0.8682) and balanced **F1-scores** in our version (0.8626 vs. 0.8717).
 - **Logistic Regression (Undersampled)**: Slight drop in **precision** (0.8493 vs. 0.8616), but improved **recall** (0.8395 vs. 0.8979).
