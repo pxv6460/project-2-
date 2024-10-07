@@ -8,11 +8,31 @@ Machine learning can help us predict the type of a star based on features such a
 
 <img width="824" alt="Screenshot 2024-10-07 at 6 06 53 PM" src="https://github.com/user-attachments/assets/7fd8bc8b-5fbb-4b2f-8336-dec5cfc74cda">
 
+
+Data Source: https://www.kaggle.com/datasets/vinesmsuic/star-categorization-giants-and-dwarfs/discussion/287630 
+
 ### Existing features from original dataset:
 Vmag – Visual Apparent Magnitude of the Star 
 <br> Plx – Distance Between the Star and the Earth 
 <br> B-V color index – Hot star B-V close to 0 or negative, cool star has a B-V close to 2.0 
 <br> SpType – Spectral type
+
+### Data Pre-processing 
+
+### Data Decisions
+- We went back to the raw dataset and did our own data pre-processing. 
+- We saw the “balanced” dataset, and didn’t like it. We felt like the variables are limited, there are variables to be added,, and there is more cleaning to be done. 
+- After researching, we used a few formulas to calculate a few “extra” variables, using existing variables. 
+- We defined our own classification method based on astrophysics research, and defined our own Target variable
+
+### Pre-processing pipeline 
+1. Dropna
+   a. parsing features for numerical values
+   b. add new features \ remove infinite values
+   c. remove nulls after star classification
+2. Defining target class
+   a. Based on the Hertzprung-Russell diagram, we defined our own target class based on spectral_types
+3. Adding new values 
 
 ### New features added by the team:
 Temperature
@@ -32,6 +52,9 @@ self.df["Plx"] = self.df["Plx"] / 1000
 <br> ["Luminosity (Sun=1)"] = 10**(0.4 * (4.85-self.df["Amag"]))
 <br> ["Radius (Sun=1)"] = np.sqrt(self.df["Luminosity (Sun=1)"]) * (5778 / self.df["Temperature (K)"])**2
 
+
+
+ 
 
 
 
