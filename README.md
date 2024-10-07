@@ -72,9 +72,28 @@ insert image
 2. **distance (parsecs) and distance(light years) are repetitive**
    - we chose distance (light years) because it is more commonly used
 
+## Model Training and Comparison
 
+### Models Used
+- **Support Vector Classifier (SVC)**
+- **Decision Tree**
+- **K-Nearest Neighbors (KNN)**
+- **Logistic Regression**
+- **Random Forest**
 
- 
+### Rationale
+- We focused on a **binary target** variable (0,1).
+- Non-linear models were chosen to explore complex relationships within the data.
 
+### Model Comparisons
+We conducted the following comparisons to evaluate model performance:
 
+1. **Comparison of Model Results:**
+   - After training models on the pre-processed dataset, we compared their accuracy, precision, recall, and other key metrics.
+
+2. **Processed Data Results:**
+   - We assessed how each model performed between our preprocessed data and balanced data (cleaned data done by others).
+
+3. **Comparison: Undersampling Data:**
+   - We applied undersampling techniques to balance the dataset and compared how models responded to this adjustment.
 
