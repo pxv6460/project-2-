@@ -101,11 +101,15 @@ We conducted the following comparisons to evaluate model performance:
 
 ### ML Training Pipeline 
 
-insert image
+<img width="757" alt="Screenshot 2024-10-07 at 7 37 54 PM" src="https://github.com/user-attachments/assets/6144f48f-74b8-4243-9a12-d305ec4ab798">
 
 ## Model Performance
 
+<img width="545" alt="Screenshot 2024-10-07 at 7 33 44 PM" src="https://github.com/user-attachments/assets/f4a42869-847a-41f6-864b-c0ac1d68bb28">
+
 ### MVPs
+
+<img width="667" alt="Screenshot 2024-10-07 at 7 38 51 PM" src="https://github.com/user-attachments/assets/d25b029f-20a9-462a-afb0-84d75fa95026">
 
 ## Comparisons 
 
