@@ -59,6 +59,11 @@ self.df["Plx"] = self.df["Plx"] / 1000
 <br> ["Radius (Sun=1)"] = np.sqrt(self.df["Luminosity (Sun=1)"]) * (5778 / self.df["Temperature (K)"])**2
 
 
+### New Dataset!
+<img>
+
+### Coorelations
+<img>
 
  
 
