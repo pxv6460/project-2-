@@ -17,7 +17,7 @@ Vmag – Visual Apparent Magnitude of the Star
 <br> B-V color index – Hot star B-V close to 0 or negative, cool star has a B-V close to 2.0 
 <br> SpType – Spectral type
 
-### Data Pre-processing 
+## Data Pre-processing 
 
 ### Data Decisions
 - We revisited the raw dataset and conducted our own data pre-processing.
@@ -103,13 +103,13 @@ We conducted the following comparisons to evaluate model performance:
 
 insert image
 
-### Model Performance
+## Model Performance
 
 ### MVPs
 
-### Comparisons 
+## Comparisons 
 
-### Conclusion
+## Conclusion
 
 Stellar classification is a crucial step in understanding the evolutionary stage of a star, providing essential insights into its life cycle.
 
