@@ -27,11 +27,11 @@ Vmag – Visual Apparent Magnitude of the Star
 
 ### Pre-processing pipeline 
 1. Dropna
-   a. parsing features for numerical values
-   b. add new features \ remove infinite values
-   c. remove nulls after star classification
-2. Defining target class
-   a. Based on the Hertzprung-Russell diagram, we defined our own target class based on spectral_types
+   a. parsing features for numerical values \n
+   b. add new features \ remove infinite values \n 
+   c. remove nulls after star classification \n
+2. Defining target class \n
+   a. Based on the Hertzprung-Russell diagram, we defined our own target class based on spectral_types \n
 3. Adding new values 
 
 ### New features added by the team:
