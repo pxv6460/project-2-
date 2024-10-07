@@ -107,11 +107,23 @@ We conducted the following comparisons to evaluate model performance:
 
 <img width="545" alt="Screenshot 2024-10-07 at 7 33 44 PM" src="https://github.com/user-attachments/assets/f4a42869-847a-41f6-864b-c0ac1d68bb28">
 
+- **Random Forest (Undersampled)** performs best across all metrics, handling non-linear relationships and imbalanced data effectively.
+- **KNN** and **Logistic Regression (Undersampled)** perform well but have lower recall and F1-scores, missing some classifications.
+- **Logistic Regression (Regular)** performs weakest, especially in recall, making it less suitable for this task.
+
 ### MVPs
 
 <img width="667" alt="Screenshot 2024-10-07 at 7 38 51 PM" src="https://github.com/user-attachments/assets/d25b029f-20a9-462a-afb0-84d75fa95026">
 
+The most important features for stellar classification are **Radius** and **Temperature**, which strongly define a star's evolutionary stage. Other key features like **Magnitude**, **Luminosity**, and **Distance** provide additional predictive power but are less critical. The model's performance highlights the non-linear relationships between these features and the target variable, with **Random Forest** performing best.
+
 ## Comparisons 
+
+- **Random Forest (Undersampled)**: Our version improved **accuracy** (0.8895 vs. 0.8784) and **F1-score** (0.8779 vs. 0.8813), highlighting better performance with undersampled data.
+- **KNN**: Slight improvements in **accuracy** (0.8763 vs. 0.8682) and balanced **F1-scores** in our version (0.8626 vs. 0.8717).
+- **Logistic Regression (Undersampled)**: Slight drop in **precision** (0.8493 vs. 0.8616), but improved **recall** (0.8395 vs. 0.8979).
+- **Decision Tree (Undersampled)**: Improved **recall** (0.8435 vs. 0.8195), with a trade-off in **accuracy** (0.8399 vs. 0.8174).
+- Overall, our processed data results in more balanced model performance, especially in non-linear models like **Random Forest**
 
 ## Conclusion
 
