@@ -97,3 +97,50 @@ We conducted the following comparisons to evaluate model performance:
 3. **Comparison: Undersampling Data:**
    - We applied undersampling techniques to balance the dataset and compared how models responded to this adjustment.
 
+### ML Training Pipeline 
+
+insert image
+
+### Model Performance
+
+### MVPs
+
+### Comparisons 
+
+### Conclusion
+
+Stellar classification is a crucial step in understanding the evolutionary stage of a star, providing essential insights into its life cycle.
+
+Our classification models were trained on both available data and newly engineered features. This process was streamlined through the development of data cleansing and model variation pipelines.
+
+Among the models tested, the **Random Forest Classifier** run on undersampled data outperformed **Logistic Regression** and other models, suggesting non-linear relationships between the target variable and features.
+
+The two most important features in classifying a star were found to be:
+- **Radius**
+- **Temperature**
+
+These features contributed the most to the model's predictive performance.
+
+## Citations
+
+- [Star Categorization - Giants and Dwarfs Discussion](https://www.kaggle.com/datasets/vinesmsuic/star-categorization-giants-and-dwarfs/discussion/287630)
+- [Stellar Parallax Glossary](https://itu.physics.uiowa.edu/glossary/stellar-parallax)
+- [Measuring Distance to Nearby Stars](https://physicsfeed.com/post/how-do-we-measure-distance-nearby-star-earth/)
+- [Calculations in Stellar Astrophysics](https://sites.uni.edu/morgans/astro/course/Notes/section3/math11.html)
+- [Lecture Notes on Stellar Classification](https://sarahspolaor.faculty.wvu.edu/files/d/2cac9872-170f-4a59-893e-f69800e0d284/04_notes.pdf)
+- [Absolute Magnitude of Stars](http://csep10.phys.utk.edu/OJTA2dev/ojta/c2c/ordinary_stars/magnitudes/absolute_tl.html)
+- [Stefan-Boltzmann Law](https://www.teachastronomy.com/textbook/Properties-of-Stars/Stefan-Boltzmann-Law)
+
+### Images
+- **Webb images released by NASA (2022):** [NASA Webb Mission Multimedia](https://science.nasa.gov/mission/webb/multimedia/images/)
+- **Spectral Classification Image:**
+   The modern Morgan–Keenan spectral classification system, showing temperature ranges in Kelvin for each star class. Our Sun is classified as a G-class star with an effective temperature around 5800 K. First-generation stars are thought to consist primarily of O-type and B-type stars, some potentially over 1,000 times the mass of our Sun. ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HR-diagram-18.png), Additions by E. Siegel)
+- **Hubble Space Telescope Images:** [HubbleSite](https://hubblesite.org/home)
+
+## Important Links
+
+- [Presentation](https://docs.google.com/presentation/d/1wgXX1xskPhSk_I_Lj6hHCDrwOBuM2jeK_WAaUD8KIoQ/edit#slide=id.p10)
+- [Pre-processing Code](https://github.com/pxv6460/project-2-/blob/main/code/preprocessing.ipynb)
+- [Pre-processing Pipeline](https://github.com/pxv6460/project-2-/blob/main/code/preprocess_pipeline.py)
+- [ML Model Code](https://github.com/pxv6460/project-2-/blob/main/code/PeterProject2.ipynb)
+- [ML Model Pipeline](https://github.com/pxv6460/project-2-/blob/main/code/pipeline.py)
