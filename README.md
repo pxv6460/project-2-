@@ -24,3 +24,14 @@ Temperature
 <br> Plx (in arcsecs)
 
 ### Formulas used to calculate new features:
+self.df["Plx"] = self.df["Plx"] / 1000
+<br> ["Distance (parsecs)"] = 1/self.df["Plx"]
+<br> ["Distance (light years)"] = self.df["Distance (parsecs)"] * 3.26156
+<br> ["Amag"] = self.df["Vmag"] + 5 * (np.log10(self.df["Plx"]) + 1)
+<br> ["Temperature (K)"] = 4600 * (1/(0.92*self.df["B-V"] + 1.7) + 1/(0.92*self.df["B-V"] + 0.62))
+<br> ["Luminosity (Sun=1)"] = 10**(0.4 * (4.85-self.df["Amag"]))
+<br> ["Radius (Sun=1)"] = np.sqrt(self.df["Luminosity (Sun=1)"]) * (5778 / self.df["Temperature (K)"])**2
+
+
+
+
