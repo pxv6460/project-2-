@@ -40,7 +40,7 @@ Vmag – Visual Apparent Magnitude of the Star
 4. **Building Preprocessing Pipeline**
     - code/preprocess_pipeline.py and code/preprocessing.ipynb
   
-<img width="1015" alt="Screenshot 2024-10-07 at 8 17 24 PM" src="https://github.com/user-attachments/assets/b688add7-3100-4f8e-97e9-cabc7446b891">
+<img width="742" alt="Screenshot 2024-10-07 at 8 17 24 PM" src="https://github.com/user-attachments/assets/b688add7-3100-4f8e-97e9-cabc7446b891">
 
 ### New features added by the team:
 Temperature
